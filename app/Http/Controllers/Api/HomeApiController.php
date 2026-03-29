@@ -45,17 +45,17 @@ class HomeApiController extends Controller
                   ->orderByRaw("FIELD(id, " . implode(',', $servicesIds) . ")");
         })
         ->get();
-
+      
     $sections['services']['content']['items'] = ServiceResource::collection($services);
 
     // Projects section
-   /* $projectIds = $sections['projects']['content']['project_ids'] ?? [];
+    $projectIds = $sections['projects']['content']['project_ids'] ?? [];
 
-   / $projects = Project::with('images')
+    $projects = Project::with('images')
         ->whereIn('id', $projectIds)
         ->get();
 
-    $sections['projects']['content']['items'] = ProjectResource::collection($projects);*/
+    $sections['projects']['content']['items'] = ProjectResource::collection($projects);
 
     // RESPONSE API
     return response()->json([

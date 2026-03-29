@@ -220,7 +220,7 @@ private function processFilesRecursive(array $data, Request $request, $parentKey
         'slides.*.subtitle' => 'nullable|string|max:500',
         'slides.*.button_text' => 'nullable|string|max:100',
         'slides.*.imageFile' => 'nullable|image|mimes:jpeg,avif,png,jpg,webp|max:20480',
-        'slides.*.existingImage' => 'nullable|string|max:1000', // Pour conserver l'image existante si pas de nouveau upload
+        'slides.*.existingImage' => 'nullable|string', // Pour conserver l'image existante si pas de nouveau upload
     ]);
 
        case 'howItWork':
