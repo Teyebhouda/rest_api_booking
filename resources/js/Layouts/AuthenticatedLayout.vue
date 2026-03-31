@@ -58,12 +58,12 @@ const showingNavigationDropdown = ref(false);
                                 >
                                     Services
                                 </navLink>
-                                <NavLink
+                            <!--  <NavLink
     :href="route('reservations.index')"
     :active="route().current('reservations.index')"
 >
     Réservations
-</NavLink>
+</NavLink> -->
 
                                  <navLink
                                     :href="route('pages')"
@@ -208,12 +208,12 @@ const showingNavigationDropdown = ref(false);
                             :href="route('pages')"
                             :active="route().current('pages')"
                         >
-                        <ResponsiveNavLink
+                      <!--  <ResponsiveNavLink
     :href="route('reservations.index')"
     :active="route().current('reservations.index')"
 >
     Réservations
-</ResponsiveNavLink>
+</ResponsiveNavLink>   -->
 
                             Pages
                         </ResponsiveNavLink>
